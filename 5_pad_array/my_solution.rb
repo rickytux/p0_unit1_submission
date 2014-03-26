@@ -1,6 +1,6 @@
 # U1.W3: Pad an Array!
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # Complete each step below according to the challenge directions and 
 # include it in this file. Also make sure everything that isn't code
@@ -16,6 +16,18 @@
 
 
 # 2. Initial Solution
+class Array
+	def pad!(min_size, value = nil)
+		while self.count < min_size
+			self.push(value)
+		end
+		return self
+	end
+	def pad (min_size, value = nil)
+		self.clone.pad!(min_size, value)
+	end
+end
+
 
 
 
